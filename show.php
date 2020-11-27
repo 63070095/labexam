@@ -44,7 +44,7 @@ $res = mysqli_query($conn, 'SELECT * FROM guestbook');
       <td><center><?php echo $Result['price'];?></center></td>
       <td><center><?php echo $Result['discount'];?></center></td>
       <td><center><?php echo $Result['total'];?></center></td>
-      <td><center><a href="editl.html"><input type="submit" value="Update" class="btn btn-secondary"></a></center></td>
+      <td><center><a href="edit.html"><input type="submit" value="Update" class="btn btn-secondary"></a></center></td>
 
     </tr>
   <?php
