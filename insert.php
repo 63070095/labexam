@@ -17,7 +17,8 @@ $sql = "INSERT INTO guestbook (product , price , discount) VALUES ('$product', '
 
 
 if (mysqli_query($conn, $sql)) {
-    echo "New record created successfully";
+    echo "New record created successfully!";
+    echo '<a href="https://nidaweb.azurewebsites.net/show.php"> click here to open first page </a>';
   } else {
     echo "Error: " . $sql . "<br>" . mysqli_error($conn);
   }
