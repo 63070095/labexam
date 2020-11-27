@@ -33,6 +33,7 @@ $res = mysqli_query($conn, 'SELECT * FROM guestbook');
       <th width="100"> <div align="center">ราคาต่อหน่วย </div></th>
       <th width="100"> <div align="center">ส่วนลด(%)</div></th>
       <th width="100"> <div align="center">ราคาหลังลด</div></th>
+      <th width="50"> <div align="center">การจัดการ</div></th>
     </tr>
   <?php
   while($Result = mysqli_fetch_array($res))
@@ -43,6 +44,8 @@ $res = mysqli_query($conn, 'SELECT * FROM guestbook');
       <td><center><?php echo $Result['price'];?></center></td>
       <td><center><?php echo $Result['discount'];?></center></td>
       <td><center><?php echo $Result['total'];?></center></td>
+      <td><center><a href="editl.html"><input type="submit" value="EDIT" class="btn btn-secondary"></a></center></td>
+
     </tr>
   <?php
   }
